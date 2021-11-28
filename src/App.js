@@ -1,22 +1,16 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {usePosts} from './custom-hooks/'
-
+import Home from './pages/Home';
+import ListWisata from './pages/ListWisata';
 
 function App() {  
   return (
-    /*
     <Router>
-    Navbar
     <Switch>
-      <Route path="/" exact component={}/>
-      <Route path="/wisatas" component={} />
-      <Route path="/maps" component={} />
-      <Route path="/:slug" component={} />
+      <Route path="/" exact component={Home}/>
+      <Route path="/wisata" component={ListWisata} />
     </Switch>
-    <Footer/>
   </Router>
-  */
   );
 }
 
