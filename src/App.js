@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
     <Switch>
-      {/* <Route path="/" exact component={Home}/>
-      <Route path="/wisata" component={ListWisata}/> */}
+      <Route path="/" exact component={Home}/>
+      {/* <Route path="/wisata" component={ListWisata}/> */}
     </Switch>
     <Footer/>
   </Router>

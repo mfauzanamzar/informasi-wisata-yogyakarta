@@ -1,0 +1,21 @@
+.hero_inner {
+    text-align: center;
+    margin: 200px auto;
+    width: 800px;
+}
+.hero_container{
+    border-radius: 5px;
+    padding: 10px;
+    background: rgb(105, 201, 244, 0.4);
+}
+.hero_title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+}
+.hero_tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 300;
+}
