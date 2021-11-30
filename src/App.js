@@ -7,12 +7,12 @@ import Footer from './components/Footer';
 function App() {  
   return (
     <Router>
-    <Switch>
-      <Route path="/" exact component={Home}/>
-      {/* <Route path="/wisata" component={ListWisata}/> */}
-    </Switch>
-    <Footer/>
-  </Router>
+      <Switch>
+        <Route path="/" exact component={Home}/>
+        <Route path="/wisata" component={ListWisata}/>
+      </Switch>
+      <Footer/>
+    </Router>
   );
 }
 

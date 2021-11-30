@@ -2,9 +2,16 @@
     width: 100%;
     text-align: center;
 }
-
+.hero-wisata{
+    background-image: url('https://images.ctfassets.net/9vpzzn4fqhve/6SSX5Eakvc3cWJiXoSx79g/723c83bdcc649028544f4c1ebbb947b0/pantai-silung.jpg');
+    height: 580px;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
 .hero_inner {
-    margin: 200px auto;
+    margin: 0 auto;
+    padding-top: 200px;
     max-width: 800px;
 }
 .hero_container{
@@ -16,12 +23,13 @@
     color: #fff;
     font-weight: 800;
     font-size: 20px;
+    margin: 0 auto;
 }
 .hero_tagline {
     color: #fff;
     margin-top: 16px;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 499px) {
