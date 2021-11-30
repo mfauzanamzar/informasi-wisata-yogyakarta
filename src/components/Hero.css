@@ -1,21 +1,52 @@
-.hero_inner {
+.hero-content{
+    width: 100%;
     text-align: center;
+}
+
+.hero_inner {
     margin: 200px auto;
-    width: 800px;
+    max-width: 800px;
 }
 .hero_container{
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     background: rgb(105, 201, 244, 0.4);
 }
 .hero_title {
     color: #fff;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 20px;
 }
 .hero_tagline {
     color: #fff;
     margin-top: 16px;
     font-size: 15px;
     font-weight: 300;
+}
+
+@media screen and (max-width: 499px) {
+    .hero_container{
+        margin: 80px auto;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .hero_container{
+        margin: 100px auto;
+    }
+    .hero_title {
+        font-size: 25px;
+    }
+    .hero_tagline {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .hero_title {
+        font-size: 30px;
+    }
+    .hero_tagline {
+        font-size: 20px;
+    }
 }
