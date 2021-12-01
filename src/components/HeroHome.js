@@ -31,8 +31,8 @@ const HeroHome = () => {
             }}>
                 <div className="hero-content">
                     <div className="hero_inner">
-                        <h2 className="hero_title">Welcome to XXX</h2>
-                        <p className="hero_tagline">Temukan rekomendasi tempat liburan terbaik di Yogyakarta!</p>
+                        <h2 className="hero_title">Salamat Datang di AyoJogja</h2>
+                        <p className="hero_tagline">Temukan rekomendasi Wisata Alam terbaik di Yogyakarta!</p>
                     </div>
                 </div>
             </Slide>

@@ -33,6 +33,23 @@
     font-weight: bold;
 }
 
+.source{
+    font-size: 13px;
+    color: gray;
+}
+.source p{
+    font-weight:normal;
+    margin:0;
+}
+.source a{
+    color: gray;
+    text-decoration: none;
+}
+.source a:hover{
+    color: #69C9F4;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 650px) {
     .content-prokes{
         flex-direction: column;
