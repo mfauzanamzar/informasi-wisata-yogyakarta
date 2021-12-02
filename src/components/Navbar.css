@@ -8,7 +8,7 @@ nav {
 }
 
 .navbar__logo img{
-    width: 150px;
+    max-width: 150px;
 }
 
 .navbar{
@@ -37,7 +37,14 @@ nav {
 
 .navbar-mobile{
     display: none;
-    margin: 0 18px;
+}
+
+.navbar-mobile button{
+    min-width: 44px;
+    min-height: 44px;
+    outline: none;
+    background: none;
+    border: none;
 }
 
 .dropdown{
@@ -46,6 +53,10 @@ nav {
 
 
 @media screen and (max-width: 499px) {
+
+    .navbar__logo img{
+        width: 100px
+    }
 
     .navbar{
         height: 44px;
@@ -80,6 +91,7 @@ nav {
     }
 
     .fa{
+        font-size: 18px;
         color: #fff;
     }
 }

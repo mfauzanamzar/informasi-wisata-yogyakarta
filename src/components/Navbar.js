@@ -25,9 +25,9 @@ const Navbar = () => {
                     </Link>
                 </ul>
                 <div className="navbar-mobile">
-                    <a href="#" onClick={() => setOpen(!open)}>
+                    <button onClick={() => setOpen(!open)}>
                         <i class="fa fa-bars"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
             {open &&
