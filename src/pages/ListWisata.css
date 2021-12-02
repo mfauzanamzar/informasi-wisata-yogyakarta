@@ -1,0 +1,48 @@
+.content-wisata{
+    text-align: center;
+}
+.wisata {
+	margin: 30px;
+	text-align: left;
+	display: grid;
+	grid-row-gap: 20px;
+}
+.list-wisata {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.wisata-pic {
+	width: 100%;
+	height: 200px;
+}
+.wisata-name {
+	font-weight: 700;
+	font-size: 22px;
+	transition: 0.3s opacity;
+    line-height: 44px;
+    padding: 10px 0px 10px;
+    text-decoration: none;
+	color: inherit;
+    text-align: center;
+}
+.wisata-name:hover {
+    color: #69C9F4;
+}
+
+@media screen and (min-width: 600px) {
+	.wisata {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px
+	}
+}
+@media screen and (min-width: 900px) {
+	.wisata {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr
+	}
+}
