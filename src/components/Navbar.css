@@ -22,7 +22,7 @@ nav {
     margin: 1rem;
 }
 
-.navbar__lists li a{
+.navbar__lists a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
@@ -31,15 +31,45 @@ nav {
 .navbar-mobile{
     display: none;
     margin: 0 18px;
-    color: #fff;
 }
 
+.dropdown{
+    display: none;
+}
+
+
 @media screen and (max-width: 499px) {
+
     .navbar-mobile{
         display: unset;
     }
-    
+
     .navbar__lists{
+        background-color: #69C9F4;
+        display: list-item;
+    }
+    
+    .nav-hidden{
         display: none;
+    }
+
+    .dropdown{
+        display: unset;
+        width: 100%;
+    }
+
+    .navbar__lists li {
+        padding: 16px;
+        margin: 0;        
+        text-align: center;
+    }
+    
+    .navbar__lists li:hover{
+        background-color: #fff;
+        color: #2C272E;
+    }
+
+    .fa{
+        color: #fff;
     }
 }
