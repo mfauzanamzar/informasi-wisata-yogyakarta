@@ -7,19 +7,18 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    height: 44px;
+    height: 66px;
 }
 
 .navbar__lists{
     list-style: none;
     display: flex;
-    max-width: 1200px;
 }
 
 .navbar__lists li {
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .navbar__lists a{
@@ -40,6 +39,9 @@ nav {
 
 @media screen and (max-width: 499px) {
 
+    .navbar{
+        height: 44px;
+    }
     .navbar-mobile{
         display: unset;
     }
