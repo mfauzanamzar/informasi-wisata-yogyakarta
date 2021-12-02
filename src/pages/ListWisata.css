@@ -18,12 +18,17 @@
 	width: 100%;
 	height: 200px;
 }
+.wisata-pic-isLoading {
+	width: 100%;
+	height: 200px;
+    background-color: gray;
+}
 .wisata-name {
 	font-weight: 700;
 	font-size: 22px;
 	transition: 0.3s opacity;
     line-height: 44px;
-    padding: 10px 0px 10px;
+    padding: 5px 0px 5px;
     text-decoration: none;
 	color: inherit;
     text-align: center;

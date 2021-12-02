@@ -9,7 +9,24 @@ const ListWisata = () => {
     console.log(posts)
 
     if(isLoading) return(
-        <h1>Loading</h1>
+        <div className="content-wisata">
+            <HeroListWisata/>
+            <h1>Please wait... </h1>
+            <div className="wisata">
+                <div className="list-wisata">
+                    <div className="wisata-pic-isLoading"/>
+                    <p className="wisata-name">Wisata Alam</p>
+                </div>
+                <div className="list-wisata">
+                    <div className="wisata-pic-isLoading"/>
+                    <p className="wisata-name">Wisata Alam</p>
+                </div>
+                <div className="list-wisata">
+                    <div className="wisata-pic-isLoading"/>
+                    <p className="wisata-name">Wisata Alam</p>
+                </div>
+            </div>
+        </div>
     )
     return (
         <div className="content-wisata">
@@ -18,14 +35,12 @@ const ListWisata = () => {
             <div className="wisata">
                 {posts.map((post) =>{
                     return(
-                        <div className="wisata-item">
                         <div className="list-wisata">
                             <img className="wisata-pic" src={post.fields.image.fields.file.url} alt={post.fields.name}/>
                             <Link className="wisata-name" key={post.fields.slug} to={post.fields.slug}>
                                 <p>{post.fields.name}</p>
                             </Link>
                         </div>
-                    </div>
                     )
                 })}
             </div>
