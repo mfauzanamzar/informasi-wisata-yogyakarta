@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav>
             <div className="navbar">
                 <div className="navbar__logo">
-                    <h1>Logo</h1>
+                    <img src="/logo-ayojogja.png" alt="logo ayojogja" />
                 </div>
                 <ul className="navbar__lists nav-hidden">
                     <Link to="/">

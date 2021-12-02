@@ -3,6 +3,14 @@ nav {
     width: 100%;
 }
 
+.navbar__logo{
+    margin: 1.5rem;
+}
+
+.navbar__logo img{
+    width: 150px;
+}
+
 .navbar{
     align-items: center;
     display: flex;
