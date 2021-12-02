@@ -1,0 +1,28 @@
+nav {
+    background-color: #69C9F4;
+    width: 100%;
+}
+
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar__lists{
+    list-style: none;
+    display: flex;
+    max-width: 1200px;
+}
+
+.navbar__lists li {
+    margin: 1rem;
+}
+
+.navbar__lists li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}

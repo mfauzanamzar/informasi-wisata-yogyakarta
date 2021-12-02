@@ -13,6 +13,9 @@ const Navbar = () => {
                     <li><a href="">Wisata</a></li>
                     <li><a href="">Peta</a></li>
                 </ul>
+                <div className="navbar-mobile">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
         </nav>
     )
