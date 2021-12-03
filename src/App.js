@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {usePosts} from './custom-hooks/'
 import Navbar from './components/Navbar';
+import Detail from './pages/Detail';
 
 
 function App() {  
@@ -9,6 +10,7 @@ function App() {
     <Router>
     <Navbar/>
     <Switch>
+      <Route path="/:slug" component={Detail}/>
     </Switch>
   </Router>
   );
