@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {usePosts} from './custom-hooks/'
 import Navbar from './components/Navbar';
 import Detail from './pages/Detail';
+import Maps from './components/Maps';
 
 
 function App() {  

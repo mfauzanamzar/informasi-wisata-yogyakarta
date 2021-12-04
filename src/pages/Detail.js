@@ -1,12 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import Maps from '../components/Maps'
 import useSinglePost from '../custom-hooks/useSinglePost'
 import './Detail.css'
 
 const Detail = () => {
     const { slug } = useParams();
     const [post, isLoading] = useSinglePost(slug)
-    console.log(post)
 
     if (isLoading)
         return (
@@ -23,7 +23,10 @@ const Detail = () => {
                 <div className="content__description">{post.description}</div>
             </div>
             <div className="detail__map">
-                <h1>Location</h1>
+                <h2 className="map__title">Location</h2>
+                <div className="map__location">
+                    <Maps />
+                </div>
             </div>
         </div>
     )
