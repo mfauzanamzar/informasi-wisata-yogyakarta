@@ -1,19 +1,19 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {usePosts} from './custom-hooks/'
 import Navbar from './components/Navbar';
 import Detail from './pages/Detail';
-import Maps from './components/Maps';
+import Location from './pages/Location';
 
 
-function App() {  
+function App() {
   return (
     <Router>
-    <Navbar/>
-    <Switch>
-      <Route path="/:slug" component={Detail}/>
-    </Switch>
-  </Router>
+      <Navbar />
+      <Switch>
+        <Route path="/maps" component={Location} />
+        <Route path="/:slug" component={Detail} />
+      </Switch>
+    </Router>
   );
 }
 

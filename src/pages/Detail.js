@@ -20,12 +20,12 @@ const Detail = () => {
                 <div className="content__image">
                     <img src={post.image.fields.file.url} alt={post.name} />
                 </div>
-                <div className="content__description">{post.description}</div>
+                <p className="content__description">{post.description}</p>
             </div>
             <div className="detail__map">
                 <h2 className="map__title">Location</h2>
                 <div className="map__location">
-                    <Maps />
+                    <Maps/>
                 </div>
             </div>
         </div>
