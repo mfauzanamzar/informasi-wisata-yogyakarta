@@ -21,7 +21,7 @@ const HeroHome = () => {
                 shouldAutoplay: true,
                 shouldDisplayButtons: false,
                 autoplayDuration: 15000,
-                height: '580px'
+                height: '550px'
             }}>
 
             <Slide
