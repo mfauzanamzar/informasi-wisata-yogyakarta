@@ -1,0 +1,31 @@
+.searchbar{
+    max-width: 500px;
+    height: 40px;
+    display: flex;
+    bottom: 100px;
+    left: 70px;
+}
+
+.searchTerm {
+    max-width: 500px;
+    height: 100%;
+    border: 3px solid #005A8D;
+    border: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 100%;
+    border: 1px solid #005A8D;
+    background: #005A8D;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }

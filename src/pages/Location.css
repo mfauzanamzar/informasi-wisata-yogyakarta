@@ -1,0 +1,12 @@
+
+.location__map{
+    position: relative;
+}
+
+.location__searchbar{  
+    z-index: 99999;
+    margin: auto;  
+    position: absolute;
+    top: 90px;
+    left: 70px;
+}
