@@ -10,13 +10,14 @@ import Location from './pages/Location';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Switch>
       <Route path="/" exact component={Home}/>
         <Route path="/wisata" component={ListWisata}/>
         <Route path="/maps" component={Location} />
         <Route path="/:slug" component={Detail} />
       </Switch>
+      <Footer/>
     </Router>
   );
 }
