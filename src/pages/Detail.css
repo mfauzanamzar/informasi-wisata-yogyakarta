@@ -7,6 +7,7 @@
 .detail__title{
     margin-bottom: 20px;
     text-align: center;
+    color: #005A8D;
 }
 
 .detail__content{
@@ -29,6 +30,14 @@
     flex: 0.4;
 }
 
+.content__description p{    
+    color: #545454;
+}
+
+.content__description h2{    
+    color: #005A8D;
+}
+
 .content__description h2{
     margin-bottom: 10px;
     margin-top: 0;
@@ -39,7 +48,8 @@
     flex-direction: column;
 }
 
-.map__title{
+.map__title{    
+    color: #005A8D;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -58,15 +68,15 @@
 }
 
 @media screen and (max-width: 425px){
-    h1{
+    .detail__title{
         font-size: 1.4rem;
     }
     
-    h2{
+    .content__description h2, .map__title{
         font-size: 1rem;
     }
     
-    p{
+    .content__description p{
         font-size: 0.8rem;
     }
 }
