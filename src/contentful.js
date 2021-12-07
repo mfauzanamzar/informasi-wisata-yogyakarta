@@ -9,7 +9,7 @@ const client = require('contentful').createClient({
     client
       .getEntries({
         'fields.slug': slug,
-        content_type: 'Wisata Yogyakarta'
+        content_type: 'wisataYogyakarta'
       })
       .then(response => response.items)
   
