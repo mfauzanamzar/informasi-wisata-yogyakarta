@@ -2,15 +2,13 @@
     max-width: 500px;
     height: 40px;
     display: flex;
-    bottom: 100px;
-    left: 70px;
+    margin: 20px auto;
 }
 
 .searchTerm {
-    max-width: 500px;
+    width: 100%;
     height: 100%;
     border: 3px solid #005A8D;
-    border: none;
     padding: 5px;
     border-radius: 5px 0 0 5px;
     outline: none;

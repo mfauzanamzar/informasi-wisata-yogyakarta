@@ -7,7 +7,7 @@ import './Detail.css'
 const Detail = () => {
     const { slug } = useParams();
     const [post, isLoading] = useSinglePost(slug)
-    const style={ height: '400px', width: '100%' }
+    const style = { height: '400px', width: '100%' }
 
     if (isLoading)
         return (
@@ -24,12 +24,18 @@ const Detail = () => {
                 <div className="content__description">
                     <h2>Description</h2>
                     <p>{post.description}</p>
-                    </div>
+                </div>
             </div>
             <div className="detail__map">
                 <h2 className="map__title">Location</h2>
                 <div className="map__location">
-                    <Maps style={style}/>
+                    <Maps
+                        style={style}
+                        lat={post.location.lat}
+                        lon={post.location.lon}
+                        name={post.name}
+                        link={post.link}
+                    />
                 </div>
             </div>
         </div>

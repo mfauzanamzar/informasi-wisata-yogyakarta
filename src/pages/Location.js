@@ -4,14 +4,14 @@ import SearchBar from '../components/SearchBar'
 import './Location.css'
 
 const Location = () => {
-    const style={ height: '100vh', width: '100wh'}
+    const style = { height: '100vh', width: '100wh' }
     return (
-        <div className="location"> 
-            <div className="location__map">
-                <Maps style={style}/>
-            </div>                       
+        <div className="location">
             <div className="location__searchbar">
-                <SearchBar/>
+                <SearchBar />
+            </div>
+            <div className="location__map">
+                <Maps style={style} />
             </div>
         </div>
     )
