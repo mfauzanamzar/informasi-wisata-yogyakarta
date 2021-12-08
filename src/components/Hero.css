@@ -36,6 +36,12 @@
     .hero_container{
         margin: 80px auto;
     }
+    .hero-wisata{
+        max-height: 300px;
+    }
+    .hero_inner {
+        padding-top: 100px;
+    }
 }
 
 @media screen and (min-width: 500px) {
