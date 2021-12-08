@@ -17,7 +17,7 @@
 .hero_container{
     border-radius: 5px;
     padding: 20px;
-    background: rgb(105, 201, 244, 0.4);
+    background:rgb(0, 90, 141, 0.4);
 }
 .hero_title {
     color: #fff;
@@ -33,14 +33,24 @@
 }
 
 @media screen and (max-width: 499px) {
-    .hero_container{
-        margin: 80px auto;
-    }
     .hero-wisata{
         max-height: 300px;
     }
     .hero_inner {
         padding-top: 100px;
+    }
+    .iNOfhT{
+        max-height: 300px;
+    }
+    .hero_container{
+        margin: 60px auto;
+        padding: 0px;
+    }
+    .hero_title {
+        font-size: 20px;
+    }
+    .hero_tagline {
+        font-size: 10px;
     }
 }
 
