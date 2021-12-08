@@ -13,18 +13,12 @@ const ListWisata = () => {
             <HeroListWisata/>
             <h1>Please wait... </h1>
             <div className="wisata">
+            {[1,2,3,4,5,6].map(n => (
                 <div className="list-wisata">
                     <div className="wisata-pic-isLoading"/>
                     <p className="wisata-name">Wisata Alam</p>
                 </div>
-                <div className="list-wisata">
-                    <div className="wisata-pic-isLoading"/>
-                    <p className="wisata-name">Wisata Alam</p>
-                </div>
-                <div className="list-wisata">
-                    <div className="wisata-pic-isLoading"/>
-                    <p className="wisata-name">Wisata Alam</p>
-                </div>
+            ))}
             </div>
         </div>
     )
