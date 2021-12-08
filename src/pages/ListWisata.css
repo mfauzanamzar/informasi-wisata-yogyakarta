@@ -3,10 +3,11 @@
 	color: #005A8D;
 }
 .content-wisata h1{
-	margin:20px;
+	margin-top:20px;
 }
 .wisata {
-	margin: 20px auto;
+	margin: auto;
+	padding: 20px;
 	text-align: left;
 	display: grid;
 	grid-row-gap: 20px;
@@ -29,17 +30,25 @@
     background-color: gray;
 }
 .wisata-name {
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 22px;
 	transition: 0.3s opacity;
     line-height: 44px;
-    padding: 5px 0px 5px;
     text-decoration: none;
 	color: inherit;
     text-align: center;
 }
 .wisata-name:hover {
-    color: #69C9F4;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 499px) {
+	.wisata-pic {
+		height: 150px;
+	}
+	.wisata-name p{
+		font-size: 20px;
+	}
 }
 
 @media screen and (min-width: 600px) {

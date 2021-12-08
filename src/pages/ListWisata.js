@@ -6,7 +6,6 @@ import "./ListWisata.css";
 
 const ListWisata = () => {
     const [posts, isLoading] = usePosts();
-    console.log(posts)
 
     if(isLoading) return(
         <div className="content-wisata">
