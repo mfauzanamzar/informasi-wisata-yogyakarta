@@ -1,11 +1,16 @@
 .content-wisata{
     text-align: center;
+	color: #005A8D;
+}
+.content-wisata h1{
+	margin:20px;
 }
 .wisata {
-	margin: 30px;
+	margin: 20px auto;
 	text-align: left;
 	display: grid;
 	grid-row-gap: 20px;
+	max-width: 1200px;
 }
 .list-wisata {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
