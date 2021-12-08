@@ -10,7 +10,7 @@ const markerIcon = new L.Icon({
 })
 
 
-const AllMaps = ({ style }) => {
+const AllMaps = ({ style, setInput, input }) => {
 
     const [posts, isLoading] = usePosts()
 
@@ -27,15 +27,21 @@ const AllMaps = ({ style }) => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                {posts.map((post) => {
-                    let lat = post.fields.location.lat
-                    let lon = post.fields.location.lon
+                {posts.filter((val)=>{
+                      if (setInput == "") {
+                        return val
+                    } else if (val.fields.name.toLowerCase().includes(input.toLowerCase())) {
+                        return val
+                    }
+                }).map((val) => {
+                    let lat = val.fields.location.lat
+                    let lon = val.fields.location.lon
                     return (
                         <div>
                             <Marker position={[lat, lon]} icon={markerIcon}>
                                 <Popup>
-                                    <p>{post.fields.name}</p>
-                                    <a href={post.fields.link}>Lihat Rute di Google Map</a>
+                                    <p>{val.fields.name}</p>
+                                    <a href={val.fields.link}>Lihat Rute di Google Map</a>
                                 </Popup>
                             </Marker>
                         </div>
