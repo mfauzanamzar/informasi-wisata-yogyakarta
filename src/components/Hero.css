@@ -37,7 +37,7 @@
         max-height: 300px;
     }
     .hero_inner {
-        padding-top: 50px;
+        padding-top: 100px;
     }
     .iNOfhT{
         max-height: 300px;
@@ -55,6 +55,9 @@
 }
 
 @media screen and (min-width: 500px) {
+    .hero-wisata{
+        max-height: 480px;
+    }
     .iNOfhT{
         max-height: 480px;
     }
@@ -70,6 +73,9 @@
 }
 
 @media screen and (min-width: 850px) {
+    .hero-wisata{
+        max-height: 550px;
+    }
     .iNOfhT{
         max-height: 550px;
     }
