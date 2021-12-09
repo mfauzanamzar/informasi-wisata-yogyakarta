@@ -9,10 +9,23 @@ const Detail = () => {
     const [post, isLoading] = useSinglePost(slug)
     const style = { height: '400px', width: '100%' }
 
-    if (isLoading)
-        return (
-            <h1>Loading...</h1>
-        )
+    if(isLoading) return (
+        <div className="detail">
+            <h1 className="detail__title title-skleton"></h1>
+            <div className="detail__content">
+                <div className="content__image image-skleton">
+                </div>
+                <div className="content__description">
+                    <h2 className="title-skleton"></h2>
+                    <p className="paragraf-skleton"></p>
+                </div>
+            </div>
+            <div className="detail__map">
+                <h2 className="map__title title-skleton"></h2>
+                <div className="map__location map-skleton"></div>
+            </div>
+        </div>
+    )
 
     return (
         <div className="detail">

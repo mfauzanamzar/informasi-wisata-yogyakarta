@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HeroListWisata from "../components/HeroListWisata";
-import {usePosts} from "../custom-hooks";
+import { usePosts } from "../custom-hooks";
 import "./ListWisata.css";
 
 const ListWisata = () => {
@@ -9,7 +9,7 @@ const ListWisata = () => {
     const [input, setInput] = useState("")
     const [click, setClick] = useState("")
 
-    
+
     const handleChange = event => {
         setClick(event.target.value);
     };
@@ -18,35 +18,45 @@ const ListWisata = () => {
         setInput(click)
     }
 
-    if(isLoading) return(
+    const handleKey = e => {
+        if (e.key === "Enter") {
+            handleClick(e)
+        }
+    }
+
+    if (isLoading) return (
         <div className="content-wisata">
-            <HeroListWisata/>
+            <HeroListWisata />
             <div className="wisata-title-isLoading"></div>
             <div className="wisata">
-            {[1,2,3,4,5,6].map(n => (
-                <div>
-                    <div className="wisata-pic-isLoading"/>
-                    <div className="wisata-name-isLoading"></div>
-                </div>
-            ))}
+                {[1, 2, 3, 4, 5, 6].map(n => (
+                    <div>
+                        <div className="wisata-pic-isLoading" />
+                        <div className="wisata-name-isLoading"></div>
+                    </div>
+                ))}
             </div>
         </div>
     )
     return (
         <div className="content-wisata">
-            <HeroListWisata handleChange={handleChange} handleClick={handleClick}/>
+            <HeroListWisata
+                handleChange={handleChange}
+                handleClick={handleClick}
+                handleKey={handleKey}
+            />
             <h1>Explore Wisata </h1>
             <div className="wisata">
                 {posts.filter((post) => {
-                      if (setInput == "") {
+                    if (setInput == "") {
                         return post
                     } else if (post.fields.name.toLowerCase().includes(input.toLowerCase())) {
                         return post
                     }
-                }).map((post) =>{
-                    return(
+                }).map((post) => {
+                    return (
                         <div className="list-wisata">
-                            <img className="wisata-pic" src={post.fields.image.fields.file.url} alt={post.fields.name}/>
+                            <img className="wisata-pic" src={post.fields.image.fields.file.url} alt={post.fields.name} />
                             <Link className="wisata-name" key={post.fields.slug} to={post.fields.slug}>
                                 <p>{post.fields.name}</p>
                             </Link>

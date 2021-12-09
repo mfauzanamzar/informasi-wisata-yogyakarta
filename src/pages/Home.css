@@ -51,6 +51,11 @@
     color: #005A8D;
     font-weight: bold;
 }
+@media screen and (max-width: 499px) {
+    .content-prokes{
+        margin: 0 20px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .content-prokes{

@@ -3,6 +3,7 @@
     height: 40px;
     display: flex;
     margin: 20px auto;
+    padding: 0 20px;
 }
 
 .searchTerm {

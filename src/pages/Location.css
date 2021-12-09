@@ -13,3 +13,9 @@
     justify-content: center;
 }
 
+.maps{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+

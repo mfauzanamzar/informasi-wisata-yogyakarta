@@ -56,6 +56,34 @@
 }
 
 
+/* Skleton */
+
+.map-skleton{
+    width: 100%;
+    height: 300px;
+    background-color: #d6d5d5;
+    
+}
+
+.image-skleton{
+    width: 100%;
+    height: 500px;
+    background-color: #d6d5d5;
+}
+
+.title-skleton{
+    width: 40%;
+    margin: 20px auto;
+    height: 40px;
+    background-color: #d6d5d5;
+}
+
+.paragraf-skleton{
+    width: 100%;
+    height: 300px;
+    background-color: #d6d5d5;
+}
+
 
 @media screen and (max-width: 860px) {
     .detail__content{
@@ -64,6 +92,14 @@
 
     .content__description h2{
         text-align: center;
+    }    
+
+    .content__image{
+        flex: unset;
+    }
+
+    .content__description{
+        flex: unset;
     }
 }
 
