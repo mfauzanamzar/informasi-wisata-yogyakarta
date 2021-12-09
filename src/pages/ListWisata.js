@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import HeroListWisata from "../components/HeroListWisata";
 import {usePosts} from "../custom-hooks";
@@ -6,16 +6,27 @@ import "./ListWisata.css";
 
 const ListWisata = () => {
     const [posts, isLoading] = usePosts();
+    const [input, setInput] = useState("")
+    const [click, setClick] = useState("")
+
+    
+    const handleChange = event => {
+        setClick(event.target.value);
+    };
+    function handleClick(e) {
+        e.preventDefault();
+        setInput(click)
+    }
 
     if(isLoading) return(
         <div className="content-wisata">
             <HeroListWisata/>
-            <h1>Please wait... </h1>
+            <div className="wisata-title-isLoading"></div>
             <div className="wisata">
             {[1,2,3,4,5,6].map(n => (
-                <div className="list-wisata">
+                <div>
                     <div className="wisata-pic-isLoading"/>
-                    <p className="wisata-name">Wisata Alam</p>
+                    <div className="wisata-name-isLoading"></div>
                 </div>
             ))}
             </div>
@@ -23,10 +34,16 @@ const ListWisata = () => {
     )
     return (
         <div className="content-wisata">
-            <HeroListWisata/>
+            <HeroListWisata handleChange={handleChange} handleClick={handleClick}/>
             <h1>Explore Wisata </h1>
             <div className="wisata">
-                {posts.map((post) =>{
+                {posts.filter((post) => {
+                      if (setInput == "") {
+                        return post
+                    } else if (post.fields.name.toLowerCase().includes(input.toLowerCase())) {
+                        return post
+                    }
+                }).map((post) =>{
                     return(
                         <div className="list-wisata">
                             <img className="wisata-pic" src={post.fields.image.fields.file.url} alt={post.fields.name}/>

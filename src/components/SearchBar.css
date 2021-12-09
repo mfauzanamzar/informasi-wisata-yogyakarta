@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     border: 3px solid #005A8D;
-    padding: 5px;
+    padding: 12px;
     border-radius: 5px 0 0 5px;
     outline: none;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -25,4 +25,9 @@
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+  }
+
+  .searchButton:focus{
+      border: none;
+      outline: none;
   }
