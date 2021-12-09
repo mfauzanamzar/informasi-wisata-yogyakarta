@@ -37,26 +37,29 @@
         max-height: 300px;
     }
     .hero_inner {
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .iNOfhT{
         max-height: 300px;
     }
     .hero_container{
-        margin: 60px auto;
+        margin: 20px auto;
         padding: 0px;
     }
     .hero_title {
         font-size: 20px;
     }
     .hero_tagline {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
 @media screen and (min-width: 500px) {
+    .iNOfhT{
+        max-height: 480px;
+    }
     .hero_container{
-        margin: 100px auto;
+        margin: 50px auto;
     }
     .hero_title {
         font-size: 25px;
@@ -67,6 +70,12 @@
 }
 
 @media screen and (min-width: 850px) {
+    .iNOfhT{
+        max-height: 550px;
+    }
+    .hero_container{
+        margin: 100px auto;
+    }
     .hero_title {
         font-size: 30px;
     }
