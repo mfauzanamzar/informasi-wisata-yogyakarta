@@ -42,20 +42,44 @@
         max-height: 300px;
     }
     .hero_container{
-        margin: 30px auto;
+        margin: 20px auto;
         padding: 0px;
     }
     .hero_title {
         font-size: 18px;
     }
     .hero_tagline {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
+    .hero-wisata{
+        max-height: 480px;
+    }
+    .iNOfhT{
+        max-height: 480px;
+    }
     .hero_container{
         margin: 50px auto;
+    }
+    .hero_title {
+        font-size: 25px;
+    }
+    .hero_tagline {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .hero-wisata{
+        max-height: 550px;
+    }
+    .iNOfhT{
+        max-height: 550px;
+    }
+    .hero_container{
+        margin: 100px auto;
     }
     .hero_title {
         font-size: 24px;

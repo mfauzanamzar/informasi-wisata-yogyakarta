@@ -27,7 +27,6 @@ const HeroHome = () => {
             <Slide
             background={{
                 backgroundImage: borobudurTample,
-                backgroundAttachment: "fixed"
             }}>
                 <div className="hero-content">
                     <div className="hero_inner">
@@ -40,7 +39,6 @@ const HeroHome = () => {
             <Slide
             background={{
                 backgroundImage: jogjakarta,
-                backgroundAttachment: "fixed"
             }}>
                 <div className="hero-content">
                     <div className="hero_inner hero_container">
