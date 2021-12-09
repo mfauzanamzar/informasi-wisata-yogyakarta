@@ -4,14 +4,15 @@
 }
 .hero-wisata{
     background-image: url('https://images.ctfassets.net/9vpzzn4fqhve/6SSX5Eakvc3cWJiXoSx79g/723c83bdcc649028544f4c1ebbb947b0/pantai-silung.jpg');
-    height: 550px;
+    height: 300px;
     background-size: cover;
     width: 100%;
     background-position: center;
 }
 .hero_inner {
+    align-items: center;
     margin: 0 auto;
-    padding-top: 200px;
+    padding: 50px 0;
     max-width: 800px;
 }
 .hero_container{

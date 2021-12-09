@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import AllMaps from '../components/AllMaps'
 import SearchBar from '../components/SearchBar'
-import {usePosts} from "../custom-hooks";
 import './Location.css'
 
 const Location = () => {
 
-    const style = { height: '100vh', width: '100wh' }
+    const style = { height: '80vh', width: '100wh' }
     const [input, setInput] = useState("")
     const [click, setClick] = useState("")
 
