@@ -7,7 +7,7 @@
 }
 .wisata {
 	margin: auto;
-	padding: 20px;
+	padding: 20px 50px;
 	text-align: left;
 	display: grid;
 	grid-row-gap: 20px;
@@ -38,11 +38,18 @@
 	color: inherit;
     text-align: center;
 }
+.wisata-name p {
+	padding-bottom: 10px;
+}
 .wisata-name:hover {
     font-weight: 700;
 }
 
 @media screen and (max-width: 499px) {
+	.list-wisata {
+		margin: auto;
+		max-width: 300px;
+	}
 	.wisata-pic {
 		height: 150px;
 	}
@@ -51,12 +58,16 @@
 	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
 	.wisata {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 20px;
 		grid-row-gap: 20px
+	}
+	.list-wisata {
+		margin: auto;
+		max-width: 350px;
 	}
 }
 @media screen and (min-width: 900px) {
