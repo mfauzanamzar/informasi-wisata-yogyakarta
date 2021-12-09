@@ -13,7 +13,7 @@ const HeroHome = () => {
             set
             initialSlide={1}
             style={{
-                backgroundColor: '#69C9F4'
+                backgroundColor: '#005A8D'
             }}
             settings={{
                 slidingDuration: 500,
