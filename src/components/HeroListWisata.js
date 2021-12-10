@@ -7,7 +7,7 @@ const HeroListWisata = ({ handleChange, handleClick, handleKey }) => {
     return (
         <div className="hero-content">
             <div className="hero-wisata">
-                <div className="hero_inner">
+                <div className="hero_innerWisata">
                     <h1 className="hero_title">Wisata Alam Yogyakarta</h1>
                     <p className="hero_tagline">Cari destinasi wisata favoritemu!</p>
                     <SearchBar

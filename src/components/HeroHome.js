@@ -42,8 +42,8 @@ const HeroHome = () => {
             }}>
                 <div className="hero-content">
                     <div className="hero_inner hero_container">
-                        <h2 className="hero_title">YOGYAKARTA</h2>
-                        <p className="hero_tagline">Kota Yogyakarta merupakan ibu kota dan pusat pemerintahan Provinsi Daerah Istimewa Yogyakarta. Kota ini dikenal sebagai kota besar yang mempertahankan konsep tradisional dan budaya jawa, serta memiliki beragam destinasi wisata yang indah. Yogyakarta juga dikenal sebagai Culture City karena banyak bagian dari kota ini masih dihiasi dengan sentuhan budaya Jawa. Ornamen-ornamen khas Jawa seperti lampu-lampu jalananan, bangunan atau gedung-gedung di sepanjang jalan dan lain-lain yang unik membuat kota ini menjadi tujuan banyak wisatawan untuk menjadi destinasi berlibur. Tak hanya itu, Yogyakarta juga memiliki banyak wisata alam yang indah dan gemar dikunjungi wisatawan lokal maupun internasional.</p>
+                        <h2 className="hero_jogja">YOGYAKARTA</h2>
+                        <p className="hero_description">Kota Yogyakarta merupakan ibu kota dan pusat pemerintahan Provinsi Daerah Istimewa Yogyakarta. Kota ini dikenal sebagai kota besar yang mempertahankan konsep tradisional dan budaya jawa, serta memiliki beragam destinasi wisata yang indah. Yogyakarta juga dikenal sebagai Culture City karena banyak bagian dari kota ini masih dihiasi dengan sentuhan budaya Jawa. Ornamen-ornamen khas Jawa seperti lampu-lampu jalananan, bangunan atau gedung-gedung di sepanjang jalan dan lain-lain yang unik membuat kota ini menjadi tujuan banyak wisatawan untuk menjadi destinasi berlibur. Tak hanya itu, Yogyakarta juga memiliki banyak wisata alam yang indah dan gemar dikunjungi wisatawan lokal maupun internasional.</p>
                     </div>
                 </div>
             </Slide>

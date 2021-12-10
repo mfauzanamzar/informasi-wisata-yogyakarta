@@ -12,79 +12,71 @@
 .hero_inner {
     align-items: center;
     margin: 0 auto;
+    padding: 120px 0;
+    max-width: 800px;
+    color: #fff;
+}
+.hero_innerWisata{
+    align-items: center;
+    margin: 0 auto;
     padding: 50px 0;
     max-width: 800px;
+    color: #fff;
 }
 .hero_container{
     border-radius: 5px;
     padding: 20px;
     background:rgb(0, 90, 141, 0.4);
+    color: #fff;
+    margin: 80px auto;
 }
 .hero_title {
-    color: #fff;
     margin: 0 auto;
+    font-size: 40px;
 }
 .hero_tagline {
-    color: #fff;
     margin-top: 16px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
+}
+.hero_jogja {
+    font-size: 25px;
+}
+.hero_description {
+    font-size: 13px;
 }
 
 @media screen and (max-width: 549px) {
-    .hero-wisata{
-        max-height: 300px;
-    }
-    .hero_inner {
-        padding-top: 100px;
-    }
-    .iNOfhT{
-        max-height: 300px;
-    }
-    .hero_container{
-        margin: 20px auto;
-        padding: 0px;
-    }
     .hero_title {
-        font-size: 18px;
+        margin: 0 auto;
+        font-size: 30px;
     }
     .hero_tagline {
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .hero-wisata{
-        max-height: 480px;
-    }
-    .iNOfhT{
-        max-height: 480px;
+        font-size: 15px;
     }
     .hero_container{
-        margin: 50px auto;
+        margin: 100px auto;
+        padding: 10px;
     }
-    .hero_title {
-        font-size: 25px;
+    .hero_jogja {
+        font-size: 20px;
     }
-    .hero_tagline {
-        font-size: 18px;
+    .hero_description {
+        font-size: 10px;
     }
 }
 
 @media screen and (min-width: 850px) {
-    .hero-wisata{
-        max-height: 550px;
-    }
-    .iNOfhT{
-        max-height: 550px;
-    }
-    .hero_container{
-        margin: 100px auto;
-    }
     .hero_title {
-        font-size: 24px;
+        font-size: 50px;
     }
     .hero_tagline {
-        font-size: 16px;
+        font-size: 30px;
+    }
+    .hero_jogja {
+        font-size: 30px;
+    }
+    .hero_description {
+        font-size: 15px;
     }
 }
