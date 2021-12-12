@@ -9,6 +9,7 @@ import Location from './pages/Location';
 
 function App() {
   return (
+    <div className="App">
     <Router>
       <Navbar/>
       <Switch>
@@ -19,6 +20,7 @@ function App() {
       </Switch>
       <Footer/>
     </Router>
+    </div>
   );
 }
 

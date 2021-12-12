@@ -46,7 +46,7 @@ const ListWisata = () => {
                 handleClick={handleClick}
                 handleKey={handleKey}
             />
-            <h1>Explore Wisata </h1>
+            <h1 className="wisata-title">Explore Wisata </h1>
             <div className="wisata">
                 {posts.filter((post) => {
                     if (setInput == "") {
@@ -59,18 +59,22 @@ const ListWisata = () => {
                         <div className="list-wisata">
                             <img className="wisata-pic" src={post.fields.image.fields.file.url} alt={post.fields.name} />
                             <div className="list-desc">
-                                <Link className="wisata-name" key={post.fields.slug} to={post.fields.slug}>
+                                <div className="wisata-name" >
                                     <p>{post.fields.name}</p>
-                                </Link>
+                                </div>
                                 <p className="wisata-desc">
                                     <TextTruncate
-                                        line={8}
-                                        element="span"
+                                        line={7}
+                                        element="p"
                                         truncateText="…"
                                         text={post.fields.description}
-                                        textTruncateChild={<a href="#">Read on</a>}
                                     />
                                 </p>
+                                <div className="wisata-button__container">
+                                    <Link key={post.fields.slug} to={post.fields.slug}>
+                                        <button className="wisata-button"><span>Lihat Detail</span></button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     )
