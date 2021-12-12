@@ -33,11 +33,13 @@
 .hero_title {
     margin: 0 auto;
     font-size: 40px;
+    text-shadow: 0px 2px 2px rgb(0 0 0 / 40%);
 }
 .hero_tagline {
     margin-top: 16px;
     font-size: 20px;
     font-weight: 400;
+    text-shadow: 0px 2px 2px rgb(0 0 0 / 40%);
 }
 .hero_jogja {
     font-size: 25px;

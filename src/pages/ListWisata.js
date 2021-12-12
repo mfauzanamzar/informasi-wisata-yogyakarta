@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HeroListWisata from "../components/HeroListWisata";
 import { usePosts } from "../custom-hooks";
+import TextTruncate from 'react-text-truncate';
 import "./ListWisata.css";
 
 const ListWisata = () => {
@@ -57,9 +58,20 @@ const ListWisata = () => {
                     return (
                         <div className="list-wisata">
                             <img className="wisata-pic" src={post.fields.image.fields.file.url} alt={post.fields.name} />
-                            <Link className="wisata-name" key={post.fields.slug} to={post.fields.slug}>
-                                <p>{post.fields.name}</p>
-                            </Link>
+                            <div className="list-desc">
+                                <Link className="wisata-name" key={post.fields.slug} to={post.fields.slug}>
+                                    <p>{post.fields.name}</p>
+                                </Link>
+                                <p className="wisata-desc">
+                                    <TextTruncate
+                                        line={8}
+                                        element="span"
+                                        truncateText="…"
+                                        text={post.fields.description}
+                                        textTruncateChild={<a href="#">Read on</a>}
+                                    />
+                                </p>
+                            </div>
                         </div>
                     )
                 })}
