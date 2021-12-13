@@ -3,7 +3,7 @@
     text-align: center;
 }
 .hero-wisata{
-    background-image: url('https://images.ctfassets.net/9vpzzn4fqhve/6SSX5Eakvc3cWJiXoSx79g/723c83bdcc649028544f4c1ebbb947b0/pantai-silung.jpg');
+    background-image: url('../images/HeroList.jpg');
     height: 300px;
     background-size: cover;
     width: 100%;
@@ -46,7 +46,7 @@
     font-size: 13px;
 }
 
-.NKhRu{
+.slide-background-loaded{
     filter: brightness(0.6);
 }
 
