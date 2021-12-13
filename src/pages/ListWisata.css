@@ -1,6 +1,5 @@
 .content-wisata{
     text-align: center;
-	color: #005A8D;
 }
 .content-wisata h1{
 	margin-top:20px;
@@ -21,11 +20,79 @@
 	position: relative;
 }
 
+.list-desc{
+	padding: 0 20px 20px 20px;	
+}
+
+.wisata-desc{
+	font-size: 14px;
+	color: #545454;
+	line-height: 1.5em;
+}
+
 .wisata-pic {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
 }
+
+.wisata-title{
+	color: #005A8D;
+}
+
+.wisata-title::after{
+    content: "";
+    width: 100px;
+    margin: 8px auto;
+    display: block;
+    border-bottom: 2px solid #005A8D;
+}
+
+.wisata-button__container{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wisata-button{
+	margin-top: 24px;
+	padding: 14px 20px;
+	color: #fff;
+	background-color: #005A8D;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	transition: all 0.5s;
+	text-align: center;
+	width: 140px;
+}
+
+.wisata-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+
+.wisata-button span::after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.wisata-button:hover span {
+	padding-right: 25px;
+}
+  
+.wisata-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+  
 
 .wisata-title-isLoading{
 	width: 200px;
@@ -46,19 +113,12 @@
 	background-color: #d6d5d5;
 }
 .wisata-name {
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 22px;
 	transition: 0.3s opacity;
     line-height: 44px;
     text-decoration: none;
-	color: inherit;
-    text-align: center;
-}
-.wisata-name p {
-	padding-bottom: 10px;
-}
-.wisata-name:hover {
-    font-weight: 700;
+	color: #005A8D;
 }
 
 @media screen and (max-width: 499px) {
@@ -74,7 +134,7 @@
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
 	.wisata {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -83,7 +143,7 @@
 	}
 	.list-wisata {
 		margin: auto;
-		max-width: 350px;
+		max-width: 100%;
 	}
 }
 @media screen and (min-width: 900px) {
