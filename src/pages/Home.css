@@ -19,11 +19,11 @@
     width: fit-content;
     margin:0;
 }
-.content-prokes{
+.content-prokes, .content-ppkm{
     display:flex;
     margin: 0 50px;
 }
-.content-prokes img{
+.content-prokes img, .content-ppkm img{
     max-width: 500px;
     margin: auto;
 }
@@ -60,6 +60,9 @@
 @media screen and (max-width: 900px) {
     .content-prokes{
         flex-direction: column;
+    }
+    .content-ppkm{
+        flex-direction: column-reverse;
     }
     .content-prokes img{
         max-width: 100%;

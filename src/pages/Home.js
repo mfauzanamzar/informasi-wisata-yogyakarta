@@ -29,7 +29,7 @@ const Home = () => {
                         </ol>
                     </div>
                 </div>
-                <div className="content-prokes">
+                <div className="content-ppkm">
                     <div className="content-description">
                         <h2 className="highlight">Peraturan PPKM</h2>
                         <p>Adapun ketentuan berlibur di Yogyakarta, yaitu :</p>
