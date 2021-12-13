@@ -12,12 +12,12 @@
 
 .highlight{
     color: white;
-    padding: 0 10px;
+    padding: 6px 30px;
     background-color:#005A8D;
     text-align: center;
-    border-radius: 5px;
+    border-top-right-radius: 100px;
     width: fit-content;
-    margin:0;
+    margin-bottom: 10px;
 }
 .content-prokes{
     display:flex;
@@ -33,6 +33,7 @@
 }
 .content-description p{
     font-weight: bold;
+    margin-bottom: 6px;
 }
 
 .source{
@@ -50,6 +51,10 @@
 .source a:hover{
     color: #005A8D;
     font-weight: bold;
+}
+
+ol{
+    color: #545454;
 }
 @media screen and (max-width: 499px) {
     .content-prokes{
