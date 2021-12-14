@@ -6,6 +6,9 @@ import './Navbar.css'
 const Navbar = () => {
 
     const [open, setOpen] = useState(false)
+    const toggle = () =>{
+        setOpen(!open)
+    }
 
     return (
         <nav>
@@ -33,13 +36,13 @@ const Navbar = () => {
             {open &&
                 <div className="dropdown">
                     <ul className="navbar__lists">
-                        <Link to="/">
+                        <Link to="/"  onClick={toggle}>
                             <li>Home</li>
                         </Link>
-                        <Link to="/wisata">
+                        <Link to="/wisata" onClick={toggle} >
                             <li>Wisata</li>
                         </Link>
-                        <Link to="/Maps">
+                        <Link to="/Maps" onClick={toggle}>
                             <li>Maps</li>
                         </Link>
                     </ul>

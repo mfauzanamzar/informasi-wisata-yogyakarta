@@ -124,13 +124,15 @@
 @media screen and (max-width: 499px) {
 	.list-wisata {
 		margin: auto;
-		max-width: 300px;
 	}
 	.wisata-pic {
 		height: 150px;
 	}
 	.wisata-name p{
 		font-size: 20px;
+	}
+	.wisata {
+		padding: 20px 20px;
 	}
 }
 

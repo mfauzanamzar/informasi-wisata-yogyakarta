@@ -50,7 +50,7 @@
     filter: brightness(0.6);
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 600px) {
     .hero_title {
         width: 200px;
         margin: 0 auto;
