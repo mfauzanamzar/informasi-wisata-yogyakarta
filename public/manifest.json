@@ -1,6 +1,6 @@
 {
   "short_name": "AyoJogja",
-  "name": "Create React App Sample",
+  "name": "AyoJogja",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
+  "theme_color": "#005A8D",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
