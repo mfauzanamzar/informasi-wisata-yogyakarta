@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSlider, {Slide, Nav} from 'hero-slider';
 import "./Hero.css"
+import { Link } from "react-router-dom";
 
 const borobudurTample = 'https://cdn.pixabay.com/photo/2015/04/28/10/07/borobudur-743263_960_720.jpg'
 const jogjakarta = 'https://images.unsplash.com/photo-1602057512587-76d5cc4b34e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80'
@@ -32,6 +33,9 @@ const HeroHome = () => {
                     <div className="hero_inner">
                         <h2 className="hero_title">Salamat Datang di AyoJogja</h2>
                         <p className="hero_tagline">Temukan rekomendasi Wisata Alam terbaik di Yogyakarta!</p>
+                        <div className="hero_button">                            
+                        <Link to="wisata" className="hero_button">Lihat Wisata</Link>
+                        </div>
                     </div>
                 </div>
             </Slide>

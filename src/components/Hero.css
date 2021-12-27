@@ -46,6 +46,20 @@
     font-size: 13px;
 }
 
+.hero_button{
+    margin-top: 20px;
+}
+
+.hero_button a{
+    background-color: #005A8D;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
 .slide-background-loaded{
     filter: brightness(0.6);
 }
